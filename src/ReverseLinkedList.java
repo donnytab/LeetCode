@@ -8,7 +8,7 @@ public class ReverseLinkedList {
 	
 	public ListNode reverseList(ListNode head) {
 		if(head == null || head.next == null) {
-			return null;
+			return head;
 		}
 		
 		ListNode prev = null, current = head;
