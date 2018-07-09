@@ -25,5 +25,4 @@ public class InsertionSortList {
 	    }
 	    return helper.next;
 	}
-	}
 }
