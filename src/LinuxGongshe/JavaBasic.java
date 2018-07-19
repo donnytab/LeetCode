@@ -74,5 +74,25 @@ public class JavaBasic {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		
+		// 6. String: immutable
+		String ss = "123456";
+		System.out.println("ss = " + ss);
+		ss.replace('1', '0');
+		System.out.println("ss = " + ss);
+		String strTemp = ss.replace('1', '0');
+		System.out.println("strTemp = " + strTemp);
+		
+		
+		// 7. String & StringBuffer & (StringBuilder ?)
+		StringBuffer sb = new StringBuffer();
+		String s = new String();
+//		for(int i=0; i<100; i++) {
+//			sb.append(i);	// only 1 StringBuffer object
+//			s = s + i;		// 101 String objects
+//		}
+		
+		
 	}
 }
