@@ -94,5 +94,29 @@ public class JavaBasic {
 //		}
 		
 		
+		// 8. TreeSet with parent class and child class
+		// 如果子类和父类都复写了compareTo方法那么各自调用自己的compareTo方法
+		// 如果子类没有复写compareTo方法，那么调用的都是父类的compareTo方法 
+		
+		
+		// 9. Byte Stream & Character Stream
+		// Byte Stream : InputStream, OutputStream
+		// Character Stream : Reader, Writer
+		
+		
+		// 10. Serializable
+		// private static final long serialVersionUID = 1L  // or random long number
+		
 	}
+}
+
+// Java Interface 隐式抽象，不需要加 abstract
+abstract class Test{
+	int i;
+	Test(){i++;}	// 成员变量可以不初始化，局部变量必须初始化
+	
+	// final int i;  // Wrong. No default value for final
+	
+	abstract void testA();	// No private, can only be protected / public
+	// abstract void testA(){};  // Wrong. No implementation
 }
