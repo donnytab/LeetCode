@@ -18,7 +18,7 @@ public class MinAbsoluteDifferenceBST {
 		if(node == null) return;
 		inorder(node.left);
 		if(prev != null)
-			minDiff = Math.min(minDiff, prev.val - node.val);
+			minDiff = Math.min(minDiff, Math.abs(prev.val - node.val));
 		prev = node;
 		inorder(node.right);
 	}
