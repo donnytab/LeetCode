@@ -18,7 +18,7 @@ public class LongestPalindromicSubsequenceLength {
 				if(s.charAt(i)==s.charAt(j)) {
 					palinDP[i][j] = palinDP[i+1][j-1] + 2;
 				} else {
-					palinDP[i][j] = Math.max(palinDP[i+1][j-1], palinDP[i][j-1]);
+					palinDP[i][j] = Math.max(palinDP[i+1][j], palinDP[i][j-1]);
 				}
 			}
 		}
