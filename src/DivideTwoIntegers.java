@@ -14,7 +14,7 @@ public class DivideTwoIntegers {
     }
     
     // Sample Solution
-    public int divide(int dividend, int divisor) {
+    public int divide2(int dividend, int divisor) {
 		if(dividend==Integer.MIN_VALUE && divisor==-1) return Integer.MAX_VALUE;
         if(dividend > 0 && divisor > 0) return divideHelper(-dividend, -divisor);
         else if(dividend > 0) return -divideHelper(-dividend,divisor);
