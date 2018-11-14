@@ -24,7 +24,7 @@ public class BinaryTreeZigzagLevelOrderTraversal {
 			list.add(temp);
 		}
 		List<Integer> levelList = list.get(level);
-		if((level & 1) == 1) 
+		if((level & 1) == 0) 
 			levelList.add(node.val);
 		else
 			levelList.add(0,node.val);
